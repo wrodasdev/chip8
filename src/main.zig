@@ -26,7 +26,7 @@ const keymap = [16]rl.KeyboardKey{
 
 pub fn main() !void {
     var chip8 = Chip8.init();
-    try chip8.load_rom("breakout.ch8");
+    try chip8.load_rom("./roms/test_opcode.ch8");
 
     rl.initWindow(constants.SCREEN_WIDTH * SCALE, constants.SCREEN_HEIGHT * SCALE, "Zig Chip 8");
     defer rl.closeWindow();
